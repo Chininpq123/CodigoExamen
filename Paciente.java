@@ -64,7 +64,7 @@ public class Paciente {
         int hijos = scanner.nextInt();
 
 
-        Paciente paciente = new Paciente(nombre, tipoEnfermedad, edad, diasEstancia);
+        Paciente paciente = new Paciente(nombre, tipoEnfermedad, edad, diasEstancia, hijos);
         double costoTotal = paciente.calcularCosto();
 
         System.out.println("Recibo de paciente");
@@ -73,5 +73,6 @@ public class Paciente {
         System.out.println("Edad: " + paciente.edad);
         System.out.println("Días de estancia: " + paciente.diasEstancia);
         System.out.println("Costo total: " + costoTotal);
+        System.out.println("nombre de hijos " + paciente.hijos);
     }
 }
