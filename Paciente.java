@@ -38,6 +38,9 @@ public class Paciente {
             case 4:
                 costoDiario = 320;
                 break;
+            case 5:
+                costoDiario = 1240;
+                break;    
         }
         return costoDiario;
     }
@@ -56,6 +59,10 @@ public class Paciente {
 
         System.out.println("Ingrese los días de estancia: ");
         int diasEstancia = scanner.nextInt();
+
+        System.out.println("ingresar nombre de hijos");
+        int hijos = scanner.nextInt();
+
 
         Paciente paciente = new Paciente(nombre, tipoEnfermedad, edad, diasEstancia);
         double costoTotal = paciente.calcularCosto();
